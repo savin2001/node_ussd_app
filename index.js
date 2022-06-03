@@ -24,4 +24,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 
 app.get('/', (req, res) => res.send('Hello World!'))
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
+app.post('/', (req, res) => {
+    console.log(req.body)
+});
